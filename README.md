@@ -30,11 +30,20 @@ npm install && npm start
 if you want to run this inside a docker container
 ```
 docker build -t denghongcai/forsaken-mail .
-docker run --name forsaken-mail -d -p 25:25 -p 3000:3000 denghongcai/forsaken-mail
+
+//修改为80端口
+
+//docker run --name forsaken-mail -d -p 25:25 -p 3000:3000 denghongcai/forsaken-mail
+
+docker build github.com/kmm9962/forsaken-mail -t kmm996/forsaken-mail-80
+docker run --name forsaken-mail -d -p 25:25 -p 80:80 kmm996/forsaken-mail-80
 ```
 Open your browser and type in
 ```
-http://localhost:3000
+
+//http://localhost:3000
+
+http://localhos/
 ```
 
 Enjoy!
