@@ -34,8 +34,8 @@ npm install && npm start
 if you want to run this inside a docker container
 ```
 //修改为80端口
-docker build github.com/kmm9962/forsaken-mail-80 -t kmm996/forsaken-mail-80
-docker run --name forsaken-mail -d -p 25:25 -p 80:80 kmm996/forsaken-mail-80
+docker build https://github.com/jialezi/forsaken-mail-80 -t jialezi/forsaken-mail
+docker run --name forsaken-mail -d -p 25:25 -p 80:80 jialezi/forsaken-mail
 ```
 Open your browser and type in
 ```
